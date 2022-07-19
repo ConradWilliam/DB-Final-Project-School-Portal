@@ -1,0 +1,18 @@
+#Concatenating Students with GPA of 4
+SELECT Students_Name FROM Students WHERE Student_Id IN(SELECT Student1_Id FROM University WHERE Marks1_Id IN (SELECT Marks_Id FROM MARKS WHERE GPA LIKE "%4%"));
+
+#Concatenating Students Doing Computer Science
+SELECT Students_Name FROM Students WHERE Student_Id IN(SELECT Student1_Id FROM University WHERE Marks1_Id IN (SELECT Marks_Id FROM MARKS WHERE Student_Course LIKE "%Computer Science%"));
+
+#Join Where GPA LIKE 4.0 
+SELECT Students_Name FROM Students
+   ...> JOIN University ON Students.Student_Id = University.Student1_Id
+   ...> JOIN Marks ON Marks.Marks_Id=University.Marks1_Id
+   ...> WHERE GPA LIKE "%4.0%"; 
+
+#Join Showing Students in a Faculty
+SELECT Students_Name FROM Students JOIN University JOIN College ON Students.Student_Id = University.Student1_Id AND University.Faculty1_Id = College.Faculty_Id;
+
+#Join Showing Number Of Students In The Faculty
+SELECT COUNT(DISTINCT(Students_Name)) FROM Students JOIN University JOIN College ON Students.Student_Id = University.Student1_Id AND University.Faculty1_Id = College.Faculty_Id;
+

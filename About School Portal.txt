@@ -1,0 +1,31 @@
+STUDENT AUTOMATED REGISTRATION DESK (School Portal)
+The Automated Registration Desk (School Portal) is made to suit the needs of the registration process. The purpose of this desktop application is to allow the registration of students in a particular course, faculty and their respective grades.
+Being a database project, we used SQLite, which concentrates on the use of database objects. 
+
+PURPOSE AND SCOPE
+This Student College Event registration project aims at enrolling the students in various courses in college or university. This data is stored for later times.
+The section wants to computerize the existing system to increase the speed of processing as well as for simplifying the activities, without losing accuracy.
+The system is expected to computerize the activities of the college in enrollment. It is planned to implement retrieval of data in the future.
+Scope of Study
+This will help the college in generating its daily reports by providing necessary information. The system is expected to computerize the activities of the college in enrollment.
+
+REGISTRATION PROCESS
+Using this application provided basic entry columns for the candidate to enter their details.
+The details are as follows:
+•	Student’s ID No.
+•	Student’s Name
+•	Student’s Gender
+•	Student’s National Identification Number
+•	Student’s Phone number
+•	Student’s Email-Id
+•	Student’s Course
+•	Lecturers’ Name
+•	Lecturers’ Id
+•	Lecturers’ Email
+•	GPA
+•	Faculty
+•	Faculty Id
+
+After this, we linked our Automated Registration Desk (School Portal) project to the SQLite database to store the entered details of the candidate.
+
+
